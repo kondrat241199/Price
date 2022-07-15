@@ -1,0 +1,115 @@
+@import "fonts";
+@import "varibles";
+body {
+  background-color: #9789f9;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.block {
+  position: relative;
+  margin-top: 50px;
+  width: 30%;
+  height: 500px;
+  background-color: #f5f3f9;
+}
+
+.block:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+
+.course {
+  text-align: center;
+  &__price {
+    position: relative;
+    font-family: $ff-price;
+    font-size: 60px;
+  }
+
+  &__price::before {
+    position: absolute;
+    content: "$";
+    left: -10px;
+    top: 10px;
+    font-size: 24px;
+  }
+  &__price::after {
+    font-family: "Bebas Neue";
+    position: absolute;
+    content: "/HR";
+    right: -18px;
+    bottom: 10px;
+    font-size: 16px;
+  }
+
+  &__road {
+    font-family: "Bebas Neue Book";
+    font-size: 24px;
+  }
+}
+
+.offers {
+  &__item {
+    padding: 20px 0px;
+    text-align: center;
+    list-style: none;
+    font-family: $ff-main;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  height: 80%;
+  background-color: #ffffff;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.icon {
+  display: block;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+.button {
+  background-color: #f5f3f9;
+
+  &__btn {
+    position: relative;
+    top: 50px;
+    left: 110px;
+    border: none;
+    border-radius: 45px;
+    padding: 20px 50px;
+    background-color: #6fcffb;
+    font-family: "Bebas Neue";
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  // &__btn:hover {
+  //   background-color: #fd8d7b;
+  //   transform: translateY(-62px);
+  //   transition: 0.9s;
+  // }
+
+  &__discount {
+    font-family: "Roboto";
+    color: #a9a9a9;
+    opacity: 0;
+    margin: 0;
+    position: relative;
+    left: 100px;
+  }
+
+  &__btn:hover ~ &__discount {
+    opacity: 1;
+  }
+}
