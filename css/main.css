@@ -101,6 +101,11 @@ body {
   font-weight: 400;
   font-size: 18px;
 }
+.button__btn:hover {
+  background-color: #fd8d7b;
+  transform: translateY(-62px);
+  transition: 0.9s;
+}
 .button__discount {
   font-family: "Roboto";
   color: #a9a9a9;

@@ -94,11 +94,11 @@ body {
     font-size: 18px;
   }
 
-  // &__btn:hover {
-  //   background-color: #fd8d7b;
-  //   transform: translateY(-62px);
-  //   transition: 0.9s;
-  // }
+  &__btn:hover {
+    background-color: #fd8d7b;
+    transform: translateY(-62px);
+    transition: 0.9s;
+  }
 
   &__discount {
     font-family: "Roboto";
